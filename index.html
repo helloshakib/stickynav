@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    LOGO
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci tempore, eligendi alias facere sed. Labore fugiat iusto unde nihil dignissimos quidem deserunt voluptas quae debitis, molestias, alias quisquam nisi laudantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis at, perferendis, nobis quis voluptatibus eaque odit cupiditate earum repellendus ut mollitia pariatur esse consequuntur corporis quisquam non maiores reiciendis excepturi!</p>
+            <img src="hero.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, tempore repudiandae reiciendis? Inventore natus, similique a rem quas. Accusamus enim, commodi, quae odio fugit tenetur delectus perspiciatis sit laborum aspernatur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum illum qui cumque veritatis natus eum, doloribus velit quod laboriosam. Quia voluptate, minus facilis quisquam, ad dolorem facere saepe voluptatum recusandae.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu-icon").on("click",function(){
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+
+        $(window).on("scroll",function(){
+            if($(window).scrollTop()){
+                $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black");
+            }
+        })
+    </script>
+
+</body>
+</html>
